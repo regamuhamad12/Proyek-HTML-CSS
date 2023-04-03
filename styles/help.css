@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #143642;
+}
+
+li {
+  color: #f9fbfe;
+  list-style: none;
+}
+
+a {
+  color: #f9fbfe;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 138px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #0f8b8d;
+}
+
+.nav-logo img {
+  width: 335px;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 50px;
+  font-size: 30px;
+}
+
+.container {
+  padding: 100px 257px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+  color: #0f8b8d;
+}
+
+.contact-form {
+  margin-top: 50px;
+  border: 2px solid #d2d2d2;
+  border-radius: 20px;
+  padding: 50px 98px;
+  text-align: center;
+}
+
+.contact-input {
+  text-align: left;
+}
+
+.input-form {
+  align-items: center;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 230px auto;
+}
+
+.input-form input {
+  width: 100%;
+  padding: 21px 46px;
+  font-size: 24px;
+  color: #143642;
+  border: 2px solid #d2d2d2;
+  border-radius: 20px;
+}
+
+.input-form p {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.input-form-message p {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.input-form-message {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 230px auto;
+}
+
+textarea {
+  border: 2px solid #d2d2d2;
+  border-radius: 20px;
+  height: 200px;
+}
+
+.input-btn {
+  margin-top: 30px;
+  padding: 20px 70px;
+  border-radius: 55px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  background-color: #a8201a;
+}
+
+footer {
+  display: flex;
+  padding: 80px 138px;
+  color: #f9fbfe;
+  background-color: #143642;
+  border-radius: 30px 30px 0 0;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 139px;
+}
+
+.footer-img {
+  width: 335px;
+}
+
+.footer-left-icon {
+  margin-top: 31px;
+}
+
+.footer-mail {
+  margin-right: 27px;
+  filter: invert(100%);
+}
+
+.footer-phone {
+  filter: invert(100%);
+}
+
+.footer-right {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ec9a29;
+}
+
+.footer-li {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer-text {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  nav {
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-right: auto;
+  }
+
+  .nav-logo img {
+    width: 135px;
+  }
+
+  .nav-list {
+    margin-top: 20px;
+  }
+
+  .nav-list ul {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 40px 40px 30px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .contact-form {
+    margin-top: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    padding: 30px 20px;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin: 10px 0;
+  }
+
+  .input-form input {
+    width: 100%;
+    padding: 5px 16px;
+    font-size: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .input-form p {
+    font-size: 12px;
+  }
+
+  .input-form-message p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .input-form-message {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    padding: 5px 16px;
+    font-size: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    height: 100px;
+  }
+
+  .input-btn {
+    margin-top: 30px;
+    padding: 8px 51px;
+    font-size: 10px;
+  }
+
+  footer {
+    padding: 20px 40px 40px;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-img {
+    width: 145px;
+  }
+
+  .footer-left-icon {
+    margin-top: 0px;
+  }
+
+  .footer-mail {
+    width: 30px;
+    margin-right: 17px;
+  }
+
+  .footer-phone {
+    width: 30px;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-li {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    margin-top: 38px;
+    font-size: 12px;
+    text-align: center;
+    display: inline;
+  }
+}

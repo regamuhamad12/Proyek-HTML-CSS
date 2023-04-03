@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #143642;
+}
+
+li {
+  color: #f9fbfe;
+  list-style: none;
+}
+
+a {
+  color: #f9fbfe;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 138px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #0f8b8d;
+}
+
+.nav-logo img {
+  width: 335px;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 50px;
+  font-size: 30px;
+}
+
+.container {
+  padding: 50px 138px 100px;
+}
+
+.product-content {
+  display: flex;
+  align-items: center;
+}
+
+.product-img {
+  width: 571px;
+  margin-right: 21px;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #0f8b8d;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 900;
+  color: #0f8b8d;
+}
+
+.product-desc {
+  margin-top: 44px;
+  margin-left: 119px;
+}
+
+.desc-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #0f8b8d;
+}
+
+.desc-hr {
+  width: 381px;
+  height: 5px;
+  border: none;
+  margin: 20px 0;
+  background-color: #ec9a29;
+}
+
+.desc {
+  font-size: 24px;
+  max-width: 920px;
+  margin-bottom: 45px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 55px;
+  border: none;
+  font-size: 24px;
+  background-color: #a8201a;
+}
+
+button img {
+  filter: invert(100%);
+  transform: rotate(-180deg);
+}
+
+footer {
+  display: flex;
+  padding: 80px 138px;
+  color: #f9fbfe;
+  background-color: #143642;
+  border-radius: 30px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 139px;
+}
+
+.footer-img {
+  width: 335px;
+}
+
+.footer-left-icon {
+  margin-top: 31px;
+}
+
+.footer-mail {
+  margin-right: 27px;
+  filter: invert(100%);
+}
+
+.footer-phone {
+  filter: invert(100%);
+}
+
+.footer-right {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ec9a29;
+}
+
+.footer-li {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer-text {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  nav {
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-right: auto;
+  }
+
+  .nav-logo img {
+    width: 135px;
+  }
+
+  .nav-list {
+    margin-top: 20px;
+  }
+
+  .nav-list ul {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px 40px 30px;
+  }
+
+  .product-content {
+    flex-direction: column;
+  }
+
+  .product-img {
+    max-width: 279px;
+    margin: 0;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+
+  .product-desc {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .desc-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .desc-hr {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  .desc {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  button img {
+    width: 20px;
+  }
+
+  footer {
+    padding: 20px 40px 40px;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-img {
+    width: 145px;
+  }
+
+  .footer-left-icon {
+    margin-top: 0px;
+  }
+
+  .footer-mail {
+    width: 30px;
+    margin-right: 17px;
+  }
+
+  .footer-phone {
+    width: 30px;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-li {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    margin-top: 38px;
+    font-size: 12px;
+    text-align: center;
+    display: inline;
+  }
+}

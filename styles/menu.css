@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #143642;
+}
+
+li {
+  color: #f9fbfe;
+  list-style: none;
+}
+
+a {
+  color: #f9fbfe;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 138px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #0f8b8d;
+}
+
+.nav-logo img {
+  width: 335px;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 50px;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0F8B8D;
+  margin-bottom: 40px;
+}
+
+.desc {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.coffe-product {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px 119px;
+}
+
+.card-img {
+  position: relative;
+  width: 216px;
+  border-radius: 20px;
+}
+
+.card {
+  position: absolute;
+  text-align: center;
+}
+
+/* * TRANSITION * */
+.coffe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease-in-out .5s;
+}
+
+.coffe-desc {
+  transition: ease-in-out .5s;
+}
+
+.coffe-product-img {
+  width: 186px;
+  transition: ease-in-out .5s;
+}
+
+.coffe-card:hover {
+  scale: 1.1;
+}
+
+.card:hover .coffe-product-img {
+  scale: 1.2;
+  transform: translate3d(0%, -45%, 200px);
+}
+
+.card:hover .coffe-desc {
+  transform: translate3d(0%, 120px, 200px);
+}
+
+.coffe-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-top: 21px;
+  margin-bottom: 10px;
+}
+
+.coffe-price {
+  font-size: 18px;
+  color: white;
+}
+
+.coffe-img {
+  width: 100%;
+}
+
+
+footer {
+  display: flex;
+  padding: 80px 138px;
+  color: #f9fbfe;
+  background-color: #143642;
+  border-radius: 30px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 139px;
+}
+
+.footer-img {
+  width: 335px;
+}
+
+.footer-left-icon {
+  margin-top: 31px;
+}
+
+.footer-mail {
+  margin-right: 27px;
+  filter: invert(100%);
+}
+
+.footer-phone {
+  filter: invert(100%);
+}
+
+.footer-right {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ec9a29;
+}
+
+.footer-li {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer-text {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  nav {
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .nav-logo {
+    margin-right: auto;
+  }
+
+  .nav-logo img {
+    width: 135px;
+  }
+
+  .nav-list {
+    margin-top: 20px;
+  }
+
+  .nav-list ul {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 40px 40px 60px;
+  }
+
+  .title {
+    font-size: small;
+    margin-bottom: 20px;
+  }
+
+  .desc {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .coffe-product {
+    grid-template-columns: auto auto;
+    gap: 20px 10px;
+  }
+
+
+  .coffe-product-img {
+    width: 120px;
+  }
+
+  .card:hover .coffe-product-img {
+    transform: translate3d(0%, -42%, 200px);
+  }
+
+  .card:hover .coffe-desc {
+    transform: translate3d(0%, 78px, 200px);
+  }
+
+
+  .card-img {
+    width: 135px;
+    border-radius: 10px;
+  }
+
+  .coffe-title {
+    font-size: 12px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+  }
+
+  .coffe-price {
+    font-size: 12px;
+  }
+
+  footer {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px 40px 40px;
+  }
+
+  .footer-left {
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-img {
+    width: 145px;
+  }
+
+  .footer-left-icon {
+    margin-top: 0px;
+  }
+
+  .footer-mail {
+    width: 30px;
+    margin-right: 17px;
+  }
+
+  .footer-phone {
+    width: 30px;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-li {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    margin-top: 38px;
+    font-size: 12px;
+    text-align: center;
+    display: inline;
+  }
+}
